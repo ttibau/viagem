@@ -1,4 +1,28 @@
-$SIDEMENU_TOP: #16a085;
+$verde:      #1abc9c;
 page-dashboard {
+    .main-content {
+        background-image: url('../assets/imgs/traveling.jpg');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .title-hello {
+        color: #ffffff;
+        padding-top: 40px;
+        padding-bottom: 0;
+        font-size: 3em;
+    }
 
+    .subtitle-hello {
+        color: #ffffff;
+    }
+
+    .navbar-dashboard {
+        .toolbar-title {
+            color: #ffffff;
+        }
+    }
 }

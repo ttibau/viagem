@@ -3,6 +3,7 @@
 
 // Font path is used to include ionicons,
 // roboto, and noto sans fonts
+$main-font: "../assets/fonts/font.woff2";
 $font-path: "../assets/fonts";
 
 
@@ -42,7 +43,8 @@ $colors: (
   verde:      #1abc9c,
   verdeEscuro: #16a085,
   alizarin:   #e74c3c,
-  peterRiver: #3498db
+  peterRiver: #3498db,
+  transparent: rgba(255,255,255,0.3)
 );
 
 
@@ -83,6 +85,7 @@ $colors: (
 // http://ionicframework.com/docs/ionicons/
 
 @import "ionic.ionicons";
+
 
 
 // Fonts

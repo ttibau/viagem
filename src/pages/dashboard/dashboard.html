@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar color="#16a085;">
+  <ion-navbar color="transparent" class="navbar-dashboard">
    <button ion-button menuToggle>
      <ion-icon name="menu"></ion-icon>
    </button>
@@ -16,6 +16,22 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="main-content">
+  <div>
+    <h1 class="title-hello">Hello, John Doe</h1>
+    <h3 class="subtitle-hello">Some text here</h3>
+  </div> 
+
+  <ion-grid>
+    <ion-row>
+        <ion-col>
+            <button ion-button large>Book a flight</button>
+          </ion-col>
+          <ion-col>
+            <button ion-button>My trips</button>
+            <button ion-button>Fidelidade</button>
+          </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>
