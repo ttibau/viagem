@@ -13,7 +13,7 @@ export class HomePage {
   }
 
   loginClick()  {
-    this.navCtrl.push(DashboardPage)
+    this.navCtrl.setRoot(DashboardPage)
   }
 
   ionViewDidLoad() {

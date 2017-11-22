@@ -1,14 +1,19 @@
-import { Component } from '@angular/core';
-import { Platform } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { Platform, Nav } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+import { DashboardPage } from '../pages/dashboard/dashboard';
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  public rootPage:any;
+  @ViewChild('content') nav:Nav;
+
+  public pages: Array<{ titulo: string, component: any, icon: string}>;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
@@ -17,6 +22,17 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });
+
+    this.rootPage = HomePage;
+    this.pages = [
+      { titulo: 'Dashboard', component: DashboardPage, icon: 'md-construct'},
+      { titulo: 'Dashboard', component: DashboardPage, icon: 'md-construct'}
+    ];
+
+  }
+
+  goToPage(page){
+    this.nav.setRoot(page)
   }
 }
 
