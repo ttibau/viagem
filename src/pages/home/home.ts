@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
 import { DashboardPage } from '../dashboard/dashboard';
 
 @IonicPage()
@@ -9,7 +9,7 @@ import { DashboardPage } from '../dashboard/dashboard';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public menu: MenuController) {
   }
 
   loginClick()  {
@@ -18,6 +18,9 @@ export class HomePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
+  }
+  ionViewWillEnter(){
+    this.menu.enable(false)
   }
 
 }
