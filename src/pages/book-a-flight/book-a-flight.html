@@ -6,16 +6,120 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar class="navbar-book-a-flight" color="transparent">
       <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
-    <ion-title>BookAFlight</ion-title>
+    <ion-title>Book a Flight</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="main-content">
+  <img src="../assets/imgs/fly.png" class="image-logo" />
 
+  <!-- CARD DO TIPO DE VIAGEM -->
+  <ion-card>
+    <ion-card-header>
+      Select the type of trip:
+    </ion-card-header>
+    <ion-card-content>
+        <ion-list radio-group>
+            <ion-list-header>
+              Type
+            </ion-list-header>
+          
+            <ion-item>
+              <ion-label>Round Trip</ion-label>
+              <ion-radio checked="true" value="go"></ion-radio>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label>One Way</ion-label>
+              <ion-radio value="rust"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>Use my points</ion-label>
+              <ion-checkbox color="dark" checked="false"></ion-checkbox>
+            </ion-item>
+          </ion-list>    
+      </ion-card-content>
+  </ion-card>
+
+  <!-- CARD DO DESTINO E ORIGEM -->
+  <ion-card>
+    <ion-card-header>
+      Select origin and destination:
+    </ion-card-header>
+    <ion-card-content>
+      conteudo
+    </ion-card-content>
+  </ion-card>
+
+  <!-- CARD DAS DATAS -->
+  <ion-card>
+    <ion-card-header>
+      Select the trip date: 
+    </ion-card-header>
+    <ion-card-content>
+        <ion-item>
+          <ion-label>Outbound</ion-label>
+          <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="outbound"></ion-datetime>
+        </ion-item>
+        <ion-item>
+          <ion-label>Inbound</ion-label>
+          <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="inbound"></ion-datetime>
+        </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- CARD DOS PASSAGEIROS -->
+  <ion-card>
+    <ion-card-header>
+      Passengers:
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-item>
+                  <ion-label>Adults</ion-label>
+                  <ion-select [(ngModel)]="adults">
+                    <ion-option value="1">1</ion-option>
+                    <ion-option value="2">2</ion-option>
+                  </ion-select>
+                </ion-item>
+              </ion-col>
+              <ion-col>
+                  <ion-item>
+                    <ion-label>Children</ion-label>
+                    <ion-select [(ngModel)]="children">
+                      <ion-option value="1">1</ion-option>
+                      <ion-option value="2">2</ion-option>
+                    </ion-select>
+                  </ion-item>
+              </ion-col>
+              <ion-col>
+                  <ion-item>
+                    <ion-label>Babies</ion-label>
+                    <ion-select [(ngModel)]="babies">
+                      <ion-option value="1">1</ion-option>
+                      <ion-option value="2">2</ion-option>
+                    </ion-select>
+                  </ion-item>
+              </ion-col>
+        </ion-row>
+      </ion-grid>
+      <a>More than 9 passengers?</a>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- CARD DO BOTAO DE ENCONTRAR OS VOOS -->
+  <ion-card>
+    <ion-card-content>
+      <button ion-button full color="verdeEscuro">Find your flights</button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

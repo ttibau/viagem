@@ -1,13 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { MenuController } from 'ionic-angular';
-
-/**
- * Generated class for the DashboardPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { BookAFlightPage } from '../book-a-flight/book-a-flight';
 
 @IonicPage()
 @Component({
@@ -25,6 +19,10 @@ export class DashboardPage {
 
   ionViewWillEnter(){
     this.menu.enable(true);
+  }
+
+  goToBookAFlightPage(){
+    this.navCtrl.push(BookAFlightPage);
   }
 
 }
