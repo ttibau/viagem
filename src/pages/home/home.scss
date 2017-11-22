@@ -1,0 +1,62 @@
+page-home {
+    .background {
+        background-image: url('../assets/imgs/paradise.jpg');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .scroll-content {
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    ion-card.card {
+        box-shadow: none;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 5px;
+    }
+
+    a, p, ion-card-header.card-header {
+        color: #ffff;
+    }
+
+    .item {
+        margin-bottom: 18px;
+        background: rgba(255, 255, 255, 0.5);
+        border: 18px none;
+
+        .text-input {
+            color: #ffff;
+        }
+        .text-input::-moz-placeholder {
+            color: white;
+        }
+        
+        .text-input:-ms-input-placeholder {
+            color: white;
+        }
+        
+        .text-input::-webkit-input-placeholder {
+        text-indent: 0;
+            color: white;
+        }
+    }
+
+    .list > .item-block:first-child {
+        border: medium none;
+    }
+
+    .icon {
+        padding-right: 10px;
+    }
+
+    .bottom {
+        position: absolute;
+        bottom: 0
+    }
+}
