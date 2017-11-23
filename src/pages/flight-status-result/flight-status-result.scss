@@ -20,4 +20,38 @@ page-flight-status-result {
         font-size: 1.5em;
     }
 
+    .status-card-right { 
+        float: right;
+    }
+
+    .icon {
+        padding-right: 10px;
+    }
+
+    .landed-ok {
+        color: #32db64;
+        font-size: 1.2em;
+    }
+
+    .landed-warning {
+        color: orange;
+        font-size: 1.2em;
+    }
+
+    .riscado {
+        text-decoration: line-through;
+    }
+
+   ion-row.flight-status {
+       height: 25px;
+   }
+
+   ion-row.flight-status-text{
+       height: 15px;
+   }
+
+   .card-title-green {
+     border-bottom: 1px solid green;
+   }
+  
 }
