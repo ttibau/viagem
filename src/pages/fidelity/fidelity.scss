@@ -1,0 +1,32 @@
+page-fidelity {
+    .main-content {
+        background-image: url('../assets/imgs/traveling.jpg');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: center;
+    }
+
+    ion-card.card.info-card {
+        box-shadow: none;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 5px;
+        color: #ffffff;
+        text-align: center;
+        padding: 7px;
+    }
+
+    .points {
+        font-size: 2.4em;
+        color: #ffffff;
+    }
+
+    .points-plus { 
+        color: #1abc9c;
+    }
+
+    .points-less {
+        color: #e74c3c;
+    }
+}

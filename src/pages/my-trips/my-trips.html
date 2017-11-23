@@ -6,13 +6,69 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>MyTrips</ion-title>
+  <ion-navbar color="transparent">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>My Trips</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="main-content">
 
+  <ion-card class="info-card">
+    <ion-card-content>
+      <button ion-button block color="verde" (click)="goToBookAFlight()">Add another trip?</button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header class="card-header">
+     <ion-grid>
+       <ion-row>
+         <ion-col   col-3>
+           My Trip to
+           <h1>Lima</h1>
+         </ion-col>
+         <ion-col col-3 offset-5>
+           Reservation code
+           <h1>PDHUCU</h1>
+         </ion-col>
+       </ion-row>
+     </ion-grid>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="../../assets/imgs/lima.jpg" class="location-img" />
+      <div class="card-content">
+        <h1>23 Nov 2017 - 25 Nov 2017</h1>
+        <h2>2 Flights - 2 Passengers </h2>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header class="card-header">
+      <ion-grid>
+        <ion-row>
+          <ion-col   col-3>
+            My Trip to
+            <h1>Lima</h1>
+          </ion-col>
+          <ion-col col-3 offset-5>
+            Reservation code
+            <h1>A3UHYS</h1>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="../../assets/imgs/lima.jpg" class="location-img" />
+      <div class="card-content">
+        <h1>23 Nov 2017 - 25 Nov 2017</h1>
+        <h2>2 Flights - 2 Passengers </h2>
+      </div>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

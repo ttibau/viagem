@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { MenuController } from 'ionic-angular';
 import { BookAFlightPage } from '../book-a-flight/book-a-flight';
+import { FidelityPage } from '../fidelity/fidelity';
+import { MyTripsPage } from '../my-trips/my-trips';
 
 @IonicPage()
 @Component({
@@ -23,6 +25,14 @@ export class DashboardPage {
 
   goToBookAFlightPage(){
     this.navCtrl.push(BookAFlightPage);
+  }
+
+  goToFidelityPage(){
+    this.navCtrl.push(FidelityPage);
+  }
+
+  goToMyTripsPage(){
+    this.navCtrl.push(MyTripsPage);
   }
 
 }

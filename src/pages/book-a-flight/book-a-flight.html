@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar class="navbar-book-a-flight" color="transparent">
+  <ion-navbar color="transparent">
       <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
@@ -54,7 +54,23 @@
       Select origin and destination:
     </ion-card-header>
     <ion-card-content>
-      conteudo
+      <ion-item>
+        <ion-label>From</ion-label>
+        <ion-select [(ngModel)]="origin">
+          <ion-option value="a">Rio de Janeiro (GIG)</ion-option>
+          <ion-option value="s">São Paulo (GRU)</ion-option>
+          <ion-option value="s">São Paulo (CGH)</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>To</ion-label>
+        <ion-select [(ngModel)]="destination">
+          <ion-option value="a">Rio de Janeiro (GIG)</ion-option>
+          <ion-option value="s">São Paulo (GRU)</ion-option>
+          <ion-option value="s">São Paulo (CGH)</ion-option>
+        </ion-select>
+      </ion-item>
     </ion-card-content>
   </ion-card>
 

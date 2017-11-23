@@ -11,6 +11,8 @@ import { BookAFlightPage } from '../pages/book-a-flight/book-a-flight';
 import { BoardingPassesPage } from '../pages/boarding-passes/boarding-passes';
 import { FlightStatusPage } from '../pages/flight-status/flight-status';
 import { FlightStatusResultPage } from '../pages/flight-status-result/flight-status-result';
+import { FidelityPage } from '../pages/fidelity/fidelity';
+import { MyTripsPage } from '../pages/my-trips/my-trips';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FlightStatusResultPage } from '../pages/flight-status-result/flight-sta
     BookAFlightPage,
     BoardingPassesPage,
     FlightStatusPage,
-    FlightStatusResultPage
+    FlightStatusResultPage,
+    FidelityPage,
+    MyTripsPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,9 @@ import { FlightStatusResultPage } from '../pages/flight-status-result/flight-sta
     BookAFlightPage,
     BoardingPassesPage,
     FlightStatusPage,
-    FlightStatusResultPage
+    FlightStatusResultPage,
+    FidelityPage,
+    MyTripsPage
   ],
   providers: [
     StatusBar,

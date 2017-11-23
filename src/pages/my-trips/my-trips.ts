@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { BookAFlightPage } from '../book-a-flight/book-a-flight';
 
-/**
- * Generated class for the MyTripsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -20,6 +15,10 @@ export class MyTripsPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MyTripsPage');
+  }
+
+  goToBookAFlight() {
+    this.navCtrl.setRoot(BookAFlightPage);
   }
 
 }
