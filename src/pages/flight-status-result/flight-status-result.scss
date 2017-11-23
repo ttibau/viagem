@@ -1,4 +1,4 @@
-page-dashboard {
+page-flight-status-result {
     .main-content {
         background-image: url('../assets/imgs/traveling.jpg');
         -webkit-background-size: cover;
@@ -7,31 +7,17 @@ page-dashboard {
         background-size: cover;
         background-position: center;
     }
-    
-    .title-hello {
-        color: #ffffff;
-        padding-top: 40px;
-        padding-bottom: 0;
-        font-size: 3em;
-    }
-
-    .subtitle-hello {
-        color: #ffffff;
-    }
-
- 
-    ion-card.card {
+    ion-card.card.info-card {
         box-shadow: none;
         background: rgba(0, 0, 0, 0.4);
         border-radius: 5px;
-
+        color: #ffffff;
+        text-align: center;
     }
 
-    .button-full {
-        height: 91%;
+    .card-status-text {
+        color: #ffffff;
+        font-size: 1.5em;
     }
 
-    .icon {
-        padding-right: 10px;
-    }
 }

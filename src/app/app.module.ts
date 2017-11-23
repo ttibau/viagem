@@ -9,6 +9,8 @@ import { HomePage } from '../pages/home/home';
 import { DashboardPage } from '../pages/dashboard/dashboard';
 import { BookAFlightPage } from '../pages/book-a-flight/book-a-flight';
 import { BoardingPassesPage } from '../pages/boarding-passes/boarding-passes';
+import { FlightStatusPage } from '../pages/flight-status/flight-status';
+import { FlightStatusResultPage } from '../pages/flight-status-result/flight-status-result';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { BoardingPassesPage } from '../pages/boarding-passes/boarding-passes';
     HomePage,
     DashboardPage,
     BookAFlightPage,
-    BoardingPassesPage
+    BoardingPassesPage,
+    FlightStatusPage,
+    FlightStatusResultPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,9 @@ import { BoardingPassesPage } from '../pages/boarding-passes/boarding-passes';
     HomePage,
     DashboardPage,
     BookAFlightPage,
-    BoardingPassesPage
+    BoardingPassesPage,
+    FlightStatusPage,
+    FlightStatusResultPage
   ],
   providers: [
     StatusBar,

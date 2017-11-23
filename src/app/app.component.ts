@@ -7,6 +7,8 @@ import { HomePage } from '../pages/home/home';
 import { DashboardPage } from '../pages/dashboard/dashboard';
 import { BookAFlightPage } from '../pages/book-a-flight/book-a-flight';
 import { BoardingPassesPage } from '../pages/boarding-passes/boarding-passes';
+import { FlightStatusPage } from '../pages/flight-status/flight-status';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -30,6 +32,7 @@ export class MyApp {
       { titulo: 'Dashboard', component: DashboardPage, icon: 'md-construct'},
       { titulo: 'Book a Flight', component: BookAFlightPage, icon: 'plane'},
       { titulo: 'Boarding Passes', component: BoardingPassesPage, icon: 'globe'},
+      { titulo: 'Flight status', component: FlightStatusPage, icon: 'stats'}
     ];
 
   }
