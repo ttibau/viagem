@@ -1,6 +1,7 @@
 # Desafio
 
 ```Por favor, desconsidere a scrool bar, ela aparece apenas na prototipação, não é visível dentro do app```
+![](https://image.prntscr.com/image/_ufs-9LmQKSs8cjApL7e7A.png)
 
 Obrigado pela oportunidade, desenvolvi na mão sem nenhuma ferramenta de prototipação. 
 
