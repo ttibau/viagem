@@ -1,0 +1,82 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="transparent">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="main-content">
+  <ion-card class="info-card">
+    <ion-card-content>
+      <img src="../../assets/imgs/fly.png"  class="profile-img"/>
+      <h1 class="profile-name">John Doe</h1>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-grid class="charts">
+    <ion-card class="info-card">
+      <ion-card-content>
+        <ion-row>
+          <ion-col>
+            <circle-progress 
+            [percent]="85" 
+            [radius]="50" 
+            [outerStrokeWidth]="4"
+            [innerStrokeWidth]="2"
+            [animation]="true"
+            [animationDuration]="300"
+            [titleFontSize]="30"
+            [subtitleFontSize]="15"
+            [unitsFontSize]="15"
+            ></circle-progress>
+          </ion-col>
+          <ion-col>
+            <circle-progress 
+            [percent]="64" 
+            [radius]="50" 
+            [outerStrokeWidth]="4"
+            [innerStrokeWidth]="2"
+            [animation]="true"
+            [animationDuration]="300"
+            [titleFontSize]="30"
+            [subtitleFontSize]="15"
+            [unitsFontSize]="15"
+            ></circle-progress>
+          </ion-col>
+          <ion-col>
+            <circle-progress 
+            [percent]="39" 
+            [radius]="50" 
+            [outerStrokeWidth]="4"
+            [innerStrokeWidth]="2"
+            [animation]="true"
+            [animationDuration]="300"
+            [titleFontSize]="30"
+            [subtitleFontSize]="15"
+            [unitsFontSize]="15"
+            ></circle-progress>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </ion-grid>
+
+  <ion-card class="info-card">
+    <ion-card-content>
+      <p style="color: #FFFFFF;">Time to deperture</p>
+      <progress class="progress-bar" value="22" max="100">1d 18h 22m</progress>
+      <p style="color: #ffffff;">1d 18h 22m</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

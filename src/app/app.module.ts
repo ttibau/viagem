@@ -13,6 +13,10 @@ import { FlightStatusPage } from '../pages/flight-status/flight-status';
 import { FlightStatusResultPage } from '../pages/flight-status-result/flight-status-result';
 import { FidelityPage } from '../pages/fidelity/fidelity';
 import { MyTripsPage } from '../pages/my-trips/my-trips';
+import { ProfilePage } from '../pages/profile/profile';
+
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
 
 @NgModule({
   declarations: [
@@ -24,11 +28,25 @@ import { MyTripsPage } from '../pages/my-trips/my-trips';
     FlightStatusPage,
     FlightStatusResultPage,
     FidelityPage,
-    MyTripsPage
+    MyTripsPage,
+    ProfilePage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    NgCircleProgressModule.forRoot({
+      // set defaults here
+      radius: 100,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 8,
+      outerStrokeColor: "#78C000",
+      innerStrokeColor: "#C7E596",
+      animationDuration: 300,
+      titleColor: "#FFFFFF",
+      subtitleColor: "#FFFFFF",
+      unitsColor: "#FFFFFF"
+    })
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -40,7 +58,8 @@ import { MyTripsPage } from '../pages/my-trips/my-trips';
     FlightStatusPage,
     FlightStatusResultPage,
     FidelityPage,
-    MyTripsPage
+    MyTripsPage,
+    ProfilePage
   ],
   providers: [
     StatusBar,

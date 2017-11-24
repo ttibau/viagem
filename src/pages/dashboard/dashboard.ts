@@ -5,6 +5,7 @@ import { BookAFlightPage } from '../book-a-flight/book-a-flight';
 import { FidelityPage } from '../fidelity/fidelity';
 import { MyTripsPage } from '../my-trips/my-trips';
 
+
 @IonicPage()
 @Component({
   selector: 'page-dashboard',
