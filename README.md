@@ -3,7 +3,8 @@
 ```Por favor, desconsidere a scrool bar, ela aparece apenas na prototipação, não é visível dentro do app```
 ![](https://image.prntscr.com/image/_ufs-9LmQKSs8cjApL7e7A.png)
 
-Obrigado pela oportunidade, desenvolvi na mão sem nenhuma ferramenta de prototipação. 
+Obrigado pela oportunidade, desenvolvi na mão sem nenhuma ferramenta de prototipação.  
+Alguns gráficos animados estão na sessão Profile
 
 ## Login
 ![](https://i.imgur.com/lZVmkz0.png)
@@ -35,3 +36,5 @@ Obrigado pela oportunidade, desenvolvi na mão sem nenhuma ferramenta de prototi
 ## My Trips
 ![](https://i.imgur.com/mUzb2Q4.png)
 
+## Profile
+![](https://i.imgur.com/j6UWc6D.png)
